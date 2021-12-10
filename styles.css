@@ -1,0 +1,42 @@
+.mainTitle {
+    font-family: cursive;
+    text-align: center;
+    background-color: #d72e2e;
+    margin: 0;
+
+    font-size: 60px;
+    font-weight: normal;
+    padding: 20px;
+}
+
+.main-page {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 1;
+    padding: 20px;
+    background-color: green;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 4;
+    flex-shrink: 0;
+    background-color: blue;
+}
+
+.image_box {
+    border-radius: 30px 60px 30px 60px;
+    padding: 20px;
+    width: 450px;
+    height: 350px;
+}
