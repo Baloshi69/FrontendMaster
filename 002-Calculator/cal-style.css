@@ -10,63 +10,52 @@
     display: flex;
     flex-direction: column;
     width: 300px;
-    height: 450px;
+    height: 460px;
     background-color: black;
 }
 
 .display{
     display: flex;
     justify-content: right;
-    height: 60px;
-    background-color: black;
+    border-radius: 5px;
+    align-items: center;
+    height: 50px;
+    background-color: white;
     font-family: monospace;
     margin: 10px;
+    padding-right: 10px;
     font-weight: bold;
+    font-size: 40px;
+    color: black;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    font-weight: bold;
+    flex-grow: 1;
+    height: 100%;
     font-size: x-large;
-    color: white;
-}
-
-
-.Cs-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-grow: 1;
-    margin: 2px;
-}
-
-.sevens-row{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-grow: 1;
-    margin: 2px;
-}
-.fours-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-grow: 1;
-    margin: 2px;
-}
-.ones-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-grow: 1;
-    margin: 2px;
-}
-.zero-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-grow: 1;
-    margin: 2px;
 }
 
 .button {
-    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+    flex-grow: 1;
+    height: 100%;
+    margin: 2px;
     font-size: x-large;
+    border: none;
+    border-radius: 5px;
+}
+.Cs-row, .sevens-row, .fours-row ,.ones-row, .zero-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1.0;
+    margin: 3px;
 }
 .C  {
     flex-grow: 3.1;
@@ -76,8 +65,22 @@
     flex-grow: 4.3;
 }
 
-.Cs-row:last-child { background-color: #ffeaa7; border-radius: 5px}
-.sevens-row:last-child { background-color: #ffeaa7;border-radius: 5px}
-.fours-row:last-child { background-color: #ffeaa7;border-radius: 5px}
-.ones-row:last-child { background-color: #ffeaa7;border-radius: 5px}
-.zero-row:nth-child(2) { background-color: #ffeaa7;border-radius: 5px}
+.Cs-row .divide { background-color: #ffeaa7; border-radius: 5px}
+.Cs-row button:last-child:hover { background-color: #dfb073}
+.Cs-row button:last-child:active { background-color: #df9973}
+
+.sevens-row .multiply { background-color: #ffeaa7;border-radius: 5px}
+.sevens-row button:last-child:hover  { background-color: #dfb073}
+.sevens-row button:last-child:active { background-color: #df9973}
+
+.fours-row .minus { background-color: #ffeaa7;border-radius: 5px}
+.fours-row button:last-child:hover { background-color: #dfb073}
+.fours-row button:last-child:active { background-color: #df9973}
+
+.ones-row .plus { background-color: #ffeaa7;border-radius: 5px}
+.ones-row button:last-child:hover { background-color: #dfb073}
+.ones-row button:last-child:active { background-color: #df9973}
+
+.zero-row .equal { background-color: #ffeaa7;border-radius: 5px}
+.zero-row button:last-child:hover { background-color: #dfb073}
+.zero-row button:last-child:active { background-color: #df9973}
