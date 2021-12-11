@@ -69,11 +69,11 @@
     font-size: x-large;
 }
 .C  {
-    flex-grow: 3;
+    flex-grow: 3.1;
 }
 
 .zero {
-    flex-grow: 4;
+    flex-grow: 4.3;
 }
 
 .Cs-row:last-child { background-color: #ffeaa7; border-radius: 5px}
