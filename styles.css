@@ -101,8 +101,8 @@ nav ul {
 }
 
 nav li:first-child {
-    width: 100%;
-    justify-content: center;
+    flex-basis: 100%;
+    text-align: center;
 }
 
 nav [class*="fa-"]{
@@ -115,6 +115,31 @@ nav a {
     display: block;
 }
 
-nav a:hover {
+nav a:hover,
+nav [class*="fa-"]:hover {
     color: var(--magenta);
+}
+
+.button {
+    background-color: var(--magenta);
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.button:hover {
+    color: var(--white);
+    background-color: var(--hotmag);
+}
+
+@media (min-width: 850px) {
+    nav {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    nav li:first-child {
+        flex-basis: auto;
+        text-align: left;
+        margin-right: auto;
+    }
 }
