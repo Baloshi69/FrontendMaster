@@ -1,47 +1,120 @@
-.mainTitle {
-    font-family: cursive;
-    text-align: center;
-    background-color: #d72e2e;
+/* variables declared here - these are the colors for our pages, as well as the font stacks and sizes. */
+:root {
+    --black: #171321;
+    --dkblue: #0d314b;
+    --plum: #4b0d49;
+    --hotmag: #ff17e4;
+    --magenta: #e310cb;
+    --aqua: #86fbfb;
+    --white: #f7f8fa;
+    --font-size: 1.3rem;
+    --mono: "Oxygen mono", monospace;
+    --sans: Oxygen, sans-serif;
+}
+
+
+/* border box model: https://css-tricks.com/box-sizing/ */
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+body {
+
+    padding: 0;
     margin: 0;
-    font-size: 60px;
-    font-weight: normal;
-    padding: 20px;
+    font-family: var(--sans);
+    background-color: var(--black);
+    color: white;
+    font-size: var(--font-size);
 }
 
-.main-page {
+h1, h2 , h3 {
+    margin: 0;
+}
+
+a {
+    color: var(--magenta);
+}
+a:hover {
+    color: var(--hotmag);
+    text-decoration: none;
+}
+
+
+/* intro styles */
+
+#intro {
+    padding-bottom: 10rem;
+}
+
+#intro p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+#intro .name {
+    font-family: var(--mono);
+}
+
+.name span {
+    font-family: var(--sans);
+    font-size: 4rem;
+    color: var(--aqua);
+    display: block;
+}
+
+#intro h2 {
+    font-size: 3rem;
+}
+
+#contact {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: var(--plum);
+}
+
+/* navigation styles */
+
+nav {
+    font-family: var(--mono);
+    font-size: 80%;
+    padding: 1rem;
+}
+
+nav h1 a {
+    font-family: var(--sans);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
     display: flex;
-    flex-direction: row;
-    height: 100%;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav li:first-child {
     width: 100%;
+    justify-content: center;
 }
 
-.left-section {
-    border-radius: 0px 60px 0px 60px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 25%;
-    padding: 20px;
-    background-color: #ef5616;
+nav [class*="fa-"]{
+    font-size: 150%;
+    color: var(--aqua);
+}
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    display: block;
 }
 
-.right-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 75%;
-    background-color: #ffffff;
-}
-
-.right-section h1 {
-    font-weight: bold;
-    font-size: x-large;
-    font-family: cursive;
-}
-
-.image_box {
-    border-radius: 30px 60px 30px 60px;
-    padding: 20px;
-    width: 350px;
-    height: 350px;
+nav a:hover {
+    color: var(--magenta);
 }
