@@ -23,7 +23,6 @@ html {
     box-sizing: inherit;
 }
 body {
-
     padding: 0;
     margin: 0;
     font-family: var(--sans);
@@ -32,6 +31,11 @@ body {
     font-size: var(--font-size);
 }
 
+.gradiant {
+    height: 3px;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
 h1, h2 , h3 {
     margin: 0;
 }
