@@ -80,6 +80,7 @@ a:hover {
 }
 
 #contact {
+    padding: 1rem;
     text-align: center;
     font-size: 1rem;
     line-height: 1.5;
@@ -87,6 +88,7 @@ a:hover {
 }
 
 #contact p a {
+    padding: 5px;
     text-decoration: none;
     font-size: 2em;
     color: var(--white);
@@ -153,12 +155,12 @@ nav [class*="fa-"]:hover {
 /* Footer */
 
 footer {
+    padding: 1rem;
     text-align: center;
     background-color: black;
 }
 footer ul {
     list-style-type: none;
-    padding: 0;
     margin:  1rem 0;
     font-size: 3rem;
     display: flex;
