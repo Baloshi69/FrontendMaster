@@ -37,7 +37,7 @@ h1, h2 , h3 {
 }
 
 a {
-    color: var(--magenta);
+    color: var(--aqua);
 }
 a:hover {
     color: var(--hotmag);
@@ -78,6 +78,15 @@ a:hover {
     background-color: var(--plum);
 }
 
+#contact p a {
+    text-decoration: none;
+    font-size: 2em;
+    color: var(--magenta);
+}
+
+#contact p a:hover {
+    color: var(--hotmag);
+}
 /* navigation styles */
 
 nav {
@@ -89,7 +98,9 @@ nav {
 nav h1 a {
     font-family: var(--sans);
 }
-
+nav h1 a span:hover{
+    pointer-events: none;
+}
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -97,6 +108,7 @@ nav ul {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    align-items: center;
     gap: 2rem;
 }
 
@@ -129,6 +141,27 @@ nav [class*="fa-"]:hover {
 .button:hover {
     color: var(--white);
     background-color: var(--hotmag);
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    background-color: black;
+}
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin:  1rem 0;
+    font-size: 3rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+
+footer p {
+    margin: 0;
 }
 
 @media (min-width: 850px) {
