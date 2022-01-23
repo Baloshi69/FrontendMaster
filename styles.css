@@ -48,7 +48,9 @@ a:hover {
 /* intro styles */
 
 #intro {
-    padding-bottom: 10rem;
+    padding: 4rem 2rem 10rem  2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 #intro p {
@@ -71,6 +73,12 @@ a:hover {
     font-size: 3rem;
 }
 
+/* CONTACT */
+
+.section-plum {
+    background-color: var(--plum);
+}
+
 #contact {
     text-align: center;
     font-size: 1rem;
@@ -81,12 +89,9 @@ a:hover {
 #contact p a {
     text-decoration: none;
     font-size: 2em;
-    color: var(--magenta);
+    color: var(--white);
 }
 
-#contact p a:hover {
-    color: var(--hotmag);
-}
 /* navigation styles */
 
 nav {
@@ -136,6 +141,8 @@ nav [class*="fa-"]:hover {
     background-color: var(--magenta);
     padding: 0.5rem;
     border-radius: 5px;
+    font-family: var(--mono);
+    text-decoration: none;
 }
 
 .button:hover {
