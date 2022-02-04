@@ -31,6 +31,8 @@ body {
     font-size: var(--font-size);
 }
 
+
+
 .gradiant {
     height: 3px;
     background: rgb(131,58,180);
@@ -48,6 +50,8 @@ a:hover {
     text-decoration: none;
 }
 
+img {width: 100%;
+}
 
 /* intro styles */
 
@@ -75,6 +79,56 @@ a:hover {
 
 #intro h2 {
     font-size: 3rem;
+}
+/* Projects */
+
+.section-dkblue {
+    background-color: var(--dkblue);
+}
+
+#project {
+    padding: 4rem 1rem;
+}
+
+#project h2 {
+    font-size: 2.5rem;
+    margin-bottom: calc(2.5rem * 1.5);
+}
+#project h3 {
+    color: var(--aqua);
+}
+
+#project h4 {
+    font-size: 1rem;
+    font-family: var(--mono);
+    margin: 0;
+    color: var(--white);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+#project ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    gap: 1rem;
+    font-size: 1rem;
+}
+.blackbox {
+    background-color: var(--black);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+#project img {
+    margin: 2rem 0 4rem 0;
+    border-top:  3px solid var(--aqua);
+    border-left: 3px solid var(--aqua);
+    border-radius: 25px;
+    padding: 1rem;
 }
 
 /* CONTACT */
@@ -176,7 +230,32 @@ footer ul {
 footer p {
     margin: 0;
 }
+@media (min-width: 550px) {
 
+    article {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        gap: 1rem
+    }
+
+    #project img {
+        grid-column: 1/6;
+        grid-row: 1/2;
+    }
+    #project .text {
+        grid-column: 5/11;
+        grid-row: 1/2
+    }
+
+    .text {
+        order: 2;
+        text-align: right;
+    }
+    #project ul {
+        justify-content: flex-end;
+    }
+
+}
 @media (min-width: 850px) {
     nav {
         max-width: 1200px;
